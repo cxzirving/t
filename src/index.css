@@ -162,3 +162,57 @@ img {
 .dropdown-toggle::after {
   content: none !important;
 }
+
+.custom-dropdown-menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 0.5rem;
+  margin-top: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  padding: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  align-items: center;
+}
+
+.custom-dropdown-menu.show {
+  display: grid;
+}
+
+.custom-dropdown-item {
+  background: transparent;
+  color: white;
+  border: none;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.custom-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.custom-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+.custom-primary { background-color: var(--primary); }
+.custom-success { background-color: var(--success); }
+.custom-danger  { background-color: var(--danger); }
