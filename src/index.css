@@ -1,0 +1,164 @@
+:root {
+  --primary: #3282f7;
+  --success: #68d9a4;
+  --danger: #ed6454;
+  --accent: #d04f4f;
+  --light-gray: #e7e7e7;
+  --font-main: 'Lato', sans-serif;
+  --font-title: 'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-title);
+}
+
+.site-title {
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-input {
+  height: 4rem;
+  padding: 1rem 3rem 1rem 1rem;
+  background: var(--light-gray);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-img {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.search-logo {
+  width: 1.5rem;
+}
+
+.tags {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  background-color: var(--primary);
+  color: white;
+}
+
+.tag-close-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 0.5rem;
+}
+
+.primary-dropdown {
+  background-color: var(--primary);
+  color: white;
+}
+
+.success-dropdown {
+  background-color: var(--success);
+  color: white;
+}
+
+.danger-dropdown {
+  background-color: var(--danger);
+  color: white;
+}
+
+.dropdown-item {
+  background: transparent;
+  color: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 180px;
+  background: url('../public/assets/img/plat.jpg') center / cover no-repeat;
+}
+
+.card-body {
+  background-color: var(--light-gray);
+  padding: 1rem;
+}
+
+.card-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-time {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-time-watch {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.card-ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.card-ingredients-list-item-ingredient {
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.dropdown-toggle::after {
+  content: none !important;
+}
