@@ -33,7 +33,7 @@ export default function RecipePage({ recipes }) {
         {recipe.ingredients.map((item, index) => (
           <li key={index}>
             <strong>{item.ingredient}</strong>
-            {item.quantity && ` : ${item.quantity}${item.unit ? ' ' + item.unit : ''}`}
+             {item.quantity && ` : ${item.quantity}${item.unit ? ' _' + item.unit : ''}`}
           </li>
         ))}
       </ul>
